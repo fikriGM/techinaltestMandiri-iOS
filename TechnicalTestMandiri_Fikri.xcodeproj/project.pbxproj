@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A47796A28704C7A0040119E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A47796928704C7A0040119E /* BaseViewController.swift */; };
+		4A47796D28704D170040119E /* Extension-UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A47796C28704D170040119E /* Extension-UIView.swift */; };
+		4A47796F287052D20040119E /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A47796E287052D20040119E /* NewsTableViewCell.swift */; };
+		4A712F0F2871327C00546868 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A712F0E2871327C00546868 /* SourceViewController.swift */; };
+		4A712F11287134F100546868 /* SourceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A712F10287134F100546868 /* SourceRouter.swift */; };
+		4A712F13287136F000546868 /* SourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A712F12287136F000546868 /* SourceView.swift */; };
+		4A712F15287144F500546868 /* ErrorModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A712F14287144F500546868 /* ErrorModule.swift */; };
+		4A712F1828718CE300546868 /* SourceWebViewDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A712F1728718CE300546868 /* SourceWebViewDetailProtocol.swift */; };
+		4A712F1A287190AB00546868 /* SourceWebViewDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A712F19287190AB00546868 /* SourceWebViewDetailInteractor.swift */; };
+		4A712F1C287193B100546868 /* SourcesWebViewDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A712F1B287193B100546868 /* SourcesWebViewDetailPresenter.swift */; };
+		4A712F1E2871964900546868 /* SourceWebViewDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A712F1D2871964900546868 /* SourceWebViewDetailViewController.swift */; };
+		4A712F202871966F00546868 /* SourceWebViewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A712F1F2871966F00546868 /* SourceWebViewDetailView.swift */; };
+		4A712F222871990200546868 /* SourceWebViewDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A712F212871990200546868 /* SourceWebViewDetailRouter.swift */; };
+		4A85718A2870066E00649D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571892870066E00649D93 /* AppDelegate.swift */; };
+		4A85718C2870066E00649D93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A85718B2870066E00649D93 /* SceneDelegate.swift */; };
+		4A8571912870066E00649D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A85718F2870066E00649D93 /* Main.storyboard */; };
+		4A8571932870067100649D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8571922870067100649D93 /* Assets.xcassets */; };
+		4A8571962870067100649D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8571942870067100649D93 /* LaunchScreen.storyboard */; };
+		4A8571A12870067100649D93 /* TechnicalTestMandiri_FikriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571A02870067100649D93 /* TechnicalTestMandiri_FikriTests.swift */; };
+		4A8571AB2870067100649D93 /* TechnicalTestMandiri_FikriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571AA2870067100649D93 /* TechnicalTestMandiri_FikriUITests.swift */; };
+		4A8571AD2870067100649D93 /* TechnicalTestMandiri_FikriUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571AC2870067100649D93 /* TechnicalTestMandiri_FikriUITestsLaunchTests.swift */; };
+		4A8571BF2870081500649D93 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571BE2870081500649D93 /* APIManager.swift */; };
+		4A8571C12870087300649D93 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571C02870087300649D93 /* APIClient.swift */; };
+		4A8571C428700D3000649D93 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571C328700D3000649D93 /* NewsService.swift */; };
+		4A8571C828700EBD00649D93 /* SourceModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571C728700EBD00649D93 /* SourceModule.swift */; };
+		4A8571CA28700EE900649D93 /* ArticlesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571C928700EE900649D93 /* ArticlesModule.swift */; };
+		4A8571CC28700F6B00649D93 /* NewsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571CB28700F6B00649D93 /* NewsModule.swift */; };
+		4A8571CF287010D500649D93 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571CE287010D500649D93 /* EndPoints.swift */; };
+		4A8571D1287011DE00649D93 /* ImageDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571D0287011DE00649D93 /* ImageDataService.swift */; };
+		4A8571D32870122200649D93 /* KingfisherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571D22870122200649D93 /* KingfisherService.swift */; };
+		4A8571D72870171F00649D93 /* NewsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571D62870171F00649D93 /* NewsProtocol.swift */; };
+		4A8571D928701A1D00649D93 /* NewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571D828701A1D00649D93 /* NewsPresenter.swift */; };
+		4A8571DB28701C8400649D93 /* NewsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571DA28701C8400649D93 /* NewsInteractor.swift */; };
+		4A8571DD28701EE400649D93 /* NewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571DC28701EE400649D93 /* NewsRouter.swift */; };
+		4A8571DF28701F2100649D93 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571DE28701F2100649D93 /* NewsViewController.swift */; };
+		4A8571E22870417A00649D93 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8571E12870417A00649D93 /* NewsView.swift */; };
+		4ACCC00F2870949F007AEF30 /* SourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCC00E2870949F007AEF30 /* SourceService.swift */; };
+		4ACCC01228709732007AEF30 /* SourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCC01128709732007AEF30 /* SourceProtocol.swift */; };
+		4ACCC0142870995C007AEF30 /* SourceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCC0132870995C007AEF30 /* SourceInteractor.swift */; };
+		4ACCC01628709C30007AEF30 /* SourcePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCC01528709C30007AEF30 /* SourcePresenter.swift */; };
+		5390B38ADF9F424070ED050F /* Pods_TechnicalTestMandiri_Fikri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C32324CE6C12CFCF458E8B /* Pods_TechnicalTestMandiri_Fikri.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A85719D2870067100649D93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A85717E2870066E00649D93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A8571852870066E00649D93;
+			remoteInfo = TechnicalTestMandiri_Fikri;
+		};
+		4A8571A72870067100649D93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A85717E2870066E00649D93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A8571852870066E00649D93;
+			remoteInfo = TechnicalTestMandiri_Fikri;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35C32324CE6C12CFCF458E8B /* Pods_TechnicalTestMandiri_Fikri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechnicalTestMandiri_Fikri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6509B626A1B4B4A86626D1 /* Pods-TechnicalTestMandiri_Fikri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestMandiri_Fikri.debug.xcconfig"; path = "Target Support Files/Pods-TechnicalTestMandiri_Fikri/Pods-TechnicalTestMandiri_Fikri.debug.xcconfig"; sourceTree = "<group>"; };
+		4746EA42AD42443BAFD31E2D /* Pods-TechnicalTestMandiri_Fikri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestMandiri_Fikri.release.xcconfig"; path = "Target Support Files/Pods-TechnicalTestMandiri_Fikri/Pods-TechnicalTestMandiri_Fikri.release.xcconfig"; sourceTree = "<group>"; };
+		4A47796928704C7A0040119E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4A47796C28704D170040119E /* Extension-UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-UIView.swift"; sourceTree = "<group>"; };
+		4A47796E287052D20040119E /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		4A712F0E2871327C00546868 /* SourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
+		4A712F10287134F100546868 /* SourceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceRouter.swift; sourceTree = "<group>"; };
+		4A712F12287136F000546868 /* SourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceView.swift; sourceTree = "<group>"; };
+		4A712F14287144F500546868 /* ErrorModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModule.swift; sourceTree = "<group>"; };
+		4A712F1728718CE300546868 /* SourceWebViewDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceWebViewDetailProtocol.swift; sourceTree = "<group>"; };
+		4A712F19287190AB00546868 /* SourceWebViewDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceWebViewDetailInteractor.swift; sourceTree = "<group>"; };
+		4A712F1B287193B100546868 /* SourcesWebViewDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesWebViewDetailPresenter.swift; sourceTree = "<group>"; };
+		4A712F1D2871964900546868 /* SourceWebViewDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceWebViewDetailViewController.swift; sourceTree = "<group>"; };
+		4A712F1F2871966F00546868 /* SourceWebViewDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceWebViewDetailView.swift; sourceTree = "<group>"; };
+		4A712F212871990200546868 /* SourceWebViewDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceWebViewDetailRouter.swift; sourceTree = "<group>"; };
+		4A8571862870066E00649D93 /* TechnicalTestMandiri_Fikri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechnicalTestMandiri_Fikri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8571892870066E00649D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A85718B2870066E00649D93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4A8571902870066E00649D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A8571922870067100649D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A8571952870067100649D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A8571972870067100649D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A85719C2870067100649D93 /* TechnicalTestMandiri_FikriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechnicalTestMandiri_FikriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8571A02870067100649D93 /* TechnicalTestMandiri_FikriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalTestMandiri_FikriTests.swift; sourceTree = "<group>"; };
+		4A8571A62870067100649D93 /* TechnicalTestMandiri_FikriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechnicalTestMandiri_FikriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8571AA2870067100649D93 /* TechnicalTestMandiri_FikriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalTestMandiri_FikriUITests.swift; sourceTree = "<group>"; };
+		4A8571AC2870067100649D93 /* TechnicalTestMandiri_FikriUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalTestMandiri_FikriUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A8571BE2870081500649D93 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		4A8571C02870087300649D93 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		4A8571C328700D3000649D93 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		4A8571C728700EBD00649D93 /* SourceModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceModule.swift; sourceTree = "<group>"; };
+		4A8571C928700EE900649D93 /* ArticlesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesModule.swift; sourceTree = "<group>"; };
+		4A8571CB28700F6B00649D93 /* NewsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModule.swift; sourceTree = "<group>"; };
+		4A8571CE287010D500649D93 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		4A8571D0287011DE00649D93 /* ImageDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataService.swift; sourceTree = "<group>"; };
+		4A8571D22870122200649D93 /* KingfisherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherService.swift; sourceTree = "<group>"; };
+		4A8571D62870171F00649D93 /* NewsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsProtocol.swift; sourceTree = "<group>"; };
+		4A8571D828701A1D00649D93 /* NewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPresenter.swift; sourceTree = "<group>"; };
+		4A8571DA28701C8400649D93 /* NewsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsInteractor.swift; sourceTree = "<group>"; };
+		4A8571DC28701EE400649D93 /* NewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRouter.swift; sourceTree = "<group>"; };
+		4A8571DE28701F2100649D93 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		4A8571E12870417A00649D93 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		4ACCC00E2870949F007AEF30 /* SourceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceService.swift; sourceTree = "<group>"; };
+		4ACCC01128709732007AEF30 /* SourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceProtocol.swift; sourceTree = "<group>"; };
+		4ACCC0132870995C007AEF30 /* SourceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceInteractor.swift; sourceTree = "<group>"; };
+		4ACCC01528709C30007AEF30 /* SourcePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcePresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A8571832870066E00649D93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5390B38ADF9F424070ED050F /* Pods_TechnicalTestMandiri_Fikri.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8571992870067100649D93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8571A32870067100649D93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E8A5D82423F765CB96CC772 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A6509B626A1B4B4A86626D1 /* Pods-TechnicalTestMandiri_Fikri.debug.xcconfig */,
+				4746EA42AD42443BAFD31E2D /* Pods-TechnicalTestMandiri_Fikri.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4A47796828704C6F0040119E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4A47796928704C7A0040119E /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4A47796B28704CEB0040119E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4A47796C28704D170040119E /* Extension-UIView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4A712F1628718CB800546868 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				4A712F1728718CE300546868 /* SourceWebViewDetailProtocol.swift */,
+				4A712F19287190AB00546868 /* SourceWebViewDetailInteractor.swift */,
+				4A712F1B287193B100546868 /* SourcesWebViewDetailPresenter.swift */,
+				4A712F1D2871964900546868 /* SourceWebViewDetailViewController.swift */,
+				4A712F212871990200546868 /* SourceWebViewDetailRouter.swift */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		4A85717D2870066E00649D93 = {
+			isa = PBXGroup;
+			children = (
+				4A8571882870066E00649D93 /* TechnicalTestMandiri_Fikri */,
+				4A85719F2870067100649D93 /* TechnicalTestMandiri_FikriTests */,
+				4A8571A92870067100649D93 /* TechnicalTestMandiri_FikriUITests */,
+				4A8571872870066E00649D93 /* Products */,
+				0E8A5D82423F765CB96CC772 /* Pods */,
+				CA0D052900739E146FA4CF43 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4A8571872870066E00649D93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A8571862870066E00649D93 /* TechnicalTestMandiri_Fikri.app */,
+				4A85719C2870067100649D93 /* TechnicalTestMandiri_FikriTests.xctest */,
+				4A8571A62870067100649D93 /* TechnicalTestMandiri_FikriUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A8571882870066E00649D93 /* TechnicalTestMandiri_Fikri */ = {
+			isa = PBXGroup;
+			children = (
+				4A8571D42870170D00649D93 /* Modules */,
+				4A8571C528700E6500649D93 /* Common */,
+				4A8571C228700D2100649D93 /* Services */,
+				4A8571BA2870073700649D93 /* Managers */,
+				4A8571892870066E00649D93 /* AppDelegate.swift */,
+				4A85718B2870066E00649D93 /* SceneDelegate.swift */,
+				4A85718F2870066E00649D93 /* Main.storyboard */,
+				4A8571922870067100649D93 /* Assets.xcassets */,
+				4A8571942870067100649D93 /* LaunchScreen.storyboard */,
+				4A8571972870067100649D93 /* Info.plist */,
+			);
+			path = TechnicalTestMandiri_Fikri;
+			sourceTree = "<group>";
+		};
+		4A85719F2870067100649D93 /* TechnicalTestMandiri_FikriTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A8571A02870067100649D93 /* TechnicalTestMandiri_FikriTests.swift */,
+			);
+			path = TechnicalTestMandiri_FikriTests;
+			sourceTree = "<group>";
+		};
+		4A8571A92870067100649D93 /* TechnicalTestMandiri_FikriUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A8571AA2870067100649D93 /* TechnicalTestMandiri_FikriUITests.swift */,
+				4A8571AC2870067100649D93 /* TechnicalTestMandiri_FikriUITestsLaunchTests.swift */,
+			);
+			path = TechnicalTestMandiri_FikriUITests;
+			sourceTree = "<group>";
+		};
+		4A8571BA2870073700649D93 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4A8571CD287010C400649D93 /* EndPoint */,
+				4A8571BB2870073E00649D93 /* URLDecider */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4A8571BB2870073E00649D93 /* URLDecider */ = {
+			isa = PBXGroup;
+			children = (
+				4A8571BE2870081500649D93 /* APIManager.swift */,
+				4A8571C02870087300649D93 /* APIClient.swift */,
+			);
+			path = URLDecider;
+			sourceTree = "<group>";
+		};
+		4A8571C228700D2100649D93 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4A8571C328700D3000649D93 /* NewsService.swift */,
+				4ACCC00E2870949F007AEF30 /* SourceService.swift */,
+				4A8571D0287011DE00649D93 /* ImageDataService.swift */,
+				4A8571D22870122200649D93 /* KingfisherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4A8571C528700E6500649D93 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4A47796B28704CEB0040119E /* Extension */,
+				4A8571C628700E9200649D93 /* Entity */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4A8571C628700E9200649D93 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4A8571C728700EBD00649D93 /* SourceModule.swift */,
+				4A8571C928700EE900649D93 /* ArticlesModule.swift */,
+				4A8571CB28700F6B00649D93 /* NewsModule.swift */,
+				4A712F14287144F500546868 /* ErrorModule.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4A8571CD287010C400649D93 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				4A8571CE287010D500649D93 /* EndPoints.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		4A8571D42870170D00649D93 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4ACCC00D28709396007AEF30 /* SourceArticles */,
+				4A47796828704C6F0040119E /* Base */,
+				4A8571D52870171400649D93 /* News */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4A8571D52870171400649D93 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				4A8571E02870416300649D93 /* view */,
+				4A8571D62870171F00649D93 /* NewsProtocol.swift */,
+				4A8571D828701A1D00649D93 /* NewsPresenter.swift */,
+				4A8571DA28701C8400649D93 /* NewsInteractor.swift */,
+				4A8571DC28701EE400649D93 /* NewsRouter.swift */,
+				4A8571DE28701F2100649D93 /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		4A8571E02870416300649D93 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4A8571E12870417A00649D93 /* NewsView.swift */,
+				4A47796E287052D20040119E /* NewsTableViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4ACCC00D28709396007AEF30 /* SourceArticles */ = {
+			isa = PBXGroup;
+			children = (
+				4ACCC0102870971E007AEF30 /* view */,
+				4A712F1628718CB800546868 /* detail */,
+				4ACCC01128709732007AEF30 /* SourceProtocol.swift */,
+				4ACCC0132870995C007AEF30 /* SourceInteractor.swift */,
+				4ACCC01528709C30007AEF30 /* SourcePresenter.swift */,
+				4A712F0E2871327C00546868 /* SourceViewController.swift */,
+				4A712F10287134F100546868 /* SourceRouter.swift */,
+			);
+			path = SourceArticles;
+			sourceTree = "<group>";
+		};
+		4ACCC0102870971E007AEF30 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4A712F12287136F000546868 /* SourceView.swift */,
+				4A712F1F2871966F00546868 /* SourceWebViewDetailView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CA0D052900739E146FA4CF43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35C32324CE6C12CFCF458E8B /* Pods_TechnicalTestMandiri_Fikri.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A8571852870066E00649D93 /* TechnicalTestMandiri_Fikri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A8571B02870067100649D93 /* Build configuration list for PBXNativeTarget "TechnicalTestMandiri_Fikri" */;
+			buildPhases = (
+				B76A0B9EE2F3B10DCE5CC4DB /* [CP] Check Pods Manifest.lock */,
+				4A8571822870066E00649D93 /* Sources */,
+				4A8571832870066E00649D93 /* Frameworks */,
+				4A8571842870066E00649D93 /* Resources */,
+				B82B2A0C774827CB3446CB90 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TechnicalTestMandiri_Fikri;
+			productName = TechnicalTestMandiri_Fikri;
+			productReference = 4A8571862870066E00649D93 /* TechnicalTestMandiri_Fikri.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A85719B2870067100649D93 /* TechnicalTestMandiri_FikriTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A8571B32870067100649D93 /* Build configuration list for PBXNativeTarget "TechnicalTestMandiri_FikriTests" */;
+			buildPhases = (
+				4A8571982870067100649D93 /* Sources */,
+				4A8571992870067100649D93 /* Frameworks */,
+				4A85719A2870067100649D93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A85719E2870067100649D93 /* PBXTargetDependency */,
+			);
+			name = TechnicalTestMandiri_FikriTests;
+			productName = TechnicalTestMandiri_FikriTests;
+			productReference = 4A85719C2870067100649D93 /* TechnicalTestMandiri_FikriTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A8571A52870067100649D93 /* TechnicalTestMandiri_FikriUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A8571B62870067100649D93 /* Build configuration list for PBXNativeTarget "TechnicalTestMandiri_FikriUITests" */;
+			buildPhases = (
+				4A8571A22870067100649D93 /* Sources */,
+				4A8571A32870067100649D93 /* Frameworks */,
+				4A8571A42870067100649D93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A8571A82870067100649D93 /* PBXTargetDependency */,
+			);
+			name = TechnicalTestMandiri_FikriUITests;
+			productName = TechnicalTestMandiri_FikriUITests;
+			productReference = 4A8571A62870067100649D93 /* TechnicalTestMandiri_FikriUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A85717E2870066E00649D93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					4A8571852870066E00649D93 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					4A85719B2870067100649D93 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4A8571852870066E00649D93;
+					};
+					4A8571A52870067100649D93 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4A8571852870066E00649D93;
+					};
+				};
+			};
+			buildConfigurationList = 4A8571812870066E00649D93 /* Build configuration list for PBXProject "TechnicalTestMandiri_Fikri" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A85717D2870066E00649D93;
+			productRefGroup = 4A8571872870066E00649D93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A8571852870066E00649D93 /* TechnicalTestMandiri_Fikri */,
+				4A85719B2870067100649D93 /* TechnicalTestMandiri_FikriTests */,
+				4A8571A52870067100649D93 /* TechnicalTestMandiri_FikriUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A8571842870066E00649D93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8571962870067100649D93 /* LaunchScreen.storyboard in Resources */,
+				4A8571932870067100649D93 /* Assets.xcassets in Resources */,
+				4A8571912870066E00649D93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A85719A2870067100649D93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8571A42870067100649D93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B76A0B9EE2F3B10DCE5CC4DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechnicalTestMandiri_Fikri-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B82B2A0C774827CB3446CB90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestMandiri_Fikri/Pods-TechnicalTestMandiri_Fikri-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestMandiri_Fikri/Pods-TechnicalTestMandiri_Fikri-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestMandiri_Fikri/Pods-TechnicalTestMandiri_Fikri-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A8571822870066E00649D93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ACCC01228709732007AEF30 /* SourceProtocol.swift in Sources */,
+				4A8571C428700D3000649D93 /* NewsService.swift in Sources */,
+				4A8571D1287011DE00649D93 /* ImageDataService.swift in Sources */,
+				4A712F13287136F000546868 /* SourceView.swift in Sources */,
+				4A47796F287052D20040119E /* NewsTableViewCell.swift in Sources */,
+				4A8571CF287010D500649D93 /* EndPoints.swift in Sources */,
+				4A8571BF2870081500649D93 /* APIManager.swift in Sources */,
+				4A712F1828718CE300546868 /* SourceWebViewDetailProtocol.swift in Sources */,
+				4ACCC0142870995C007AEF30 /* SourceInteractor.swift in Sources */,
+				4A85718A2870066E00649D93 /* AppDelegate.swift in Sources */,
+				4A712F1A287190AB00546868 /* SourceWebViewDetailInteractor.swift in Sources */,
+				4A47796A28704C7A0040119E /* BaseViewController.swift in Sources */,
+				4A47796D28704D170040119E /* Extension-UIView.swift in Sources */,
+				4A712F0F2871327C00546868 /* SourceViewController.swift in Sources */,
+				4A712F15287144F500546868 /* ErrorModule.swift in Sources */,
+				4ACCC00F2870949F007AEF30 /* SourceService.swift in Sources */,
+				4A8571E22870417A00649D93 /* NewsView.swift in Sources */,
+				4A712F202871966F00546868 /* SourceWebViewDetailView.swift in Sources */,
+				4A85718C2870066E00649D93 /* SceneDelegate.swift in Sources */,
+				4A8571D32870122200649D93 /* KingfisherService.swift in Sources */,
+				4A8571CA28700EE900649D93 /* ArticlesModule.swift in Sources */,
+				4A712F1C287193B100546868 /* SourcesWebViewDetailPresenter.swift in Sources */,
+				4A8571D72870171F00649D93 /* NewsProtocol.swift in Sources */,
+				4A8571DB28701C8400649D93 /* NewsInteractor.swift in Sources */,
+				4ACCC01628709C30007AEF30 /* SourcePresenter.swift in Sources */,
+				4A712F11287134F100546868 /* SourceRouter.swift in Sources */,
+				4A8571C828700EBD00649D93 /* SourceModule.swift in Sources */,
+				4A8571CC28700F6B00649D93 /* NewsModule.swift in Sources */,
+				4A8571D928701A1D00649D93 /* NewsPresenter.swift in Sources */,
+				4A8571DD28701EE400649D93 /* NewsRouter.swift in Sources */,
+				4A8571C12870087300649D93 /* APIClient.swift in Sources */,
+				4A712F1E2871964900546868 /* SourceWebViewDetailViewController.swift in Sources */,
+				4A712F222871990200546868 /* SourceWebViewDetailRouter.swift in Sources */,
+				4A8571DF28701F2100649D93 /* NewsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8571982870067100649D93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8571A12870067100649D93 /* TechnicalTestMandiri_FikriTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8571A22870067100649D93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8571AB2870067100649D93 /* TechnicalTestMandiri_FikriUITests.swift in Sources */,
+				4A8571AD2870067100649D93 /* TechnicalTestMandiri_FikriUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A85719E2870067100649D93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A8571852870066E00649D93 /* TechnicalTestMandiri_Fikri */;
+			targetProxy = 4A85719D2870067100649D93 /* PBXContainerItemProxy */;
+		};
+		4A8571A82870067100649D93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A8571852870066E00649D93 /* TechnicalTestMandiri_Fikri */;
+			targetProxy = 4A8571A72870067100649D93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A85718F2870066E00649D93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A8571902870066E00649D93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A8571942870067100649D93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A8571952870067100649D93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A8571AE2870067100649D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A8571AF2870067100649D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A8571B12870067100649D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A6509B626A1B4B4A86626D1 /* Pods-TechnicalTestMandiri_Fikri.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JQLCV9BYQG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TechnicalTestMandiri_Fikri/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TechinalTestMandiri-Fikri";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mandiri.TechnicalTestMandiri-Fikri";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A8571B22870067100649D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4746EA42AD42443BAFD31E2D /* Pods-TechnicalTestMandiri_Fikri.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JQLCV9BYQG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TechnicalTestMandiri_Fikri/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TechinalTestMandiri-Fikri";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mandiri.TechnicalTestMandiri-Fikri";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A8571B42870067100649D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mandiri.TechnicalTestMandiri-FikriTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TechnicalTestMandiri_Fikri.app/TechnicalTestMandiri_Fikri";
+			};
+			name = Debug;
+		};
+		4A8571B52870067100649D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mandiri.TechnicalTestMandiri-FikriTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TechnicalTestMandiri_Fikri.app/TechnicalTestMandiri_Fikri";
+			};
+			name = Release;
+		};
+		4A8571B72870067100649D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mandiri.TechnicalTestMandiri-FikriUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TechnicalTestMandiri_Fikri;
+			};
+			name = Debug;
+		};
+		4A8571B82870067100649D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mandiri.TechnicalTestMandiri-FikriUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TechnicalTestMandiri_Fikri;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A8571812870066E00649D93 /* Build configuration list for PBXProject "TechnicalTestMandiri_Fikri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8571AE2870067100649D93 /* Debug */,
+				4A8571AF2870067100649D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A8571B02870067100649D93 /* Build configuration list for PBXNativeTarget "TechnicalTestMandiri_Fikri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8571B12870067100649D93 /* Debug */,
+				4A8571B22870067100649D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A8571B32870067100649D93 /* Build configuration list for PBXNativeTarget "TechnicalTestMandiri_FikriTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8571B42870067100649D93 /* Debug */,
+				4A8571B52870067100649D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A8571B62870067100649D93 /* Build configuration list for PBXNativeTarget "TechnicalTestMandiri_FikriUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8571B72870067100649D93 /* Debug */,
+				4A8571B82870067100649D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A85717E2870066E00649D93 /* Project object */;
+}
